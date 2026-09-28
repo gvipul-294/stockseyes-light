@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function PricingPage() {
   return (
     <main className="subpage">
@@ -21,7 +19,6 @@ export default function PricingPage() {
           <li>Real-time streaming availability</li>
           <li>Commercial support and SLAs</li>
         </ul>
-        <p><Link className="btn btn-primary" href="/docs#quickstart">Implementation guide</Link></p>
       </div>
     </main>
   );

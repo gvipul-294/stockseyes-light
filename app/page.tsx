@@ -23,7 +23,7 @@ export default function HomePage() {
                 intraday feeds and historical market data — with the API governance needed for a public product.
               </p>
               <div className="actions">
-                <Link className="btn btn-primary" href="/docs#quickstart">Explore the API</Link>
+                <Link className="btn btn-primary" href="/#api">Explore the API</Link>
                 <Link className="btn btn-secondary" href="/#architecture">See the architecture</Link>
               </div>
             </div>
@@ -153,14 +153,6 @@ GET /v1/stocks/AAPL/history?start=2026-01-01&end=2026-09-24&interval=1d`}</pre>
           </div>
         </section>
 
-        <section className="section">
-          <div className="container">
-            <div className="banner">
-              <div><h3 style={{margin:0, fontSize:27}}>Ready for the implementation phase?</h3><p>Use the starter, replace the mock content, connect the backend and then publish the API through RapidAPI.</p></div>
-              <Link className="btn btn-secondary" href="/docs">Open implementation guide</Link>
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );
