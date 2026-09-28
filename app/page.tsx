@@ -23,7 +23,7 @@ export default function HomePage() {
                 intraday feeds and historical market data — with the API governance needed for a public product.
               </p>
               <div className="actions">
-                <Link className="btn btn-primary" href="/docs#quickstart">Explore the API</Link>
+                <Link className="btn btn-primary" href="/#api">Explore the API</Link>
                 <Link className="btn btn-secondary" href="/#architecture">See the architecture</Link>
               </div>
             </div>
@@ -147,20 +147,12 @@ GET /v1/stocks/AAPL/history?start=2026-01-01&end=2026-09-24&interval=1d`}</pre>
             <div className="workflow">
               <div className="step"><div className="step-num">01</div><h3>Build</h3><p>Edit the website, API contract and backend according to the business requirement.</p></div>
               <div className="step"><div className="step-num">02</div><h3>Verify</h3><p>Run lint and production build checks in CI for every branch or pull request.</p></div>
-              <div className="step"><div className="step-num">03</div><h3>Deploy</h3><p>Push the website through Vercel's Git integration for preview and production deployments.</p></div>
+              <div className="step"><div className="step-num">03</div><h3>Deploy</h3><p>Push the website through Vercel&apos;s Git integration for preview and production deployments.</p></div>
               <div className="step"><div className="step-num">04</div><h3>Publish</h3><p>Host the production API separately, import its OpenAPI contract into RapidAPI and configure the listing.</p></div>
             </div>
           </div>
         </section>
 
-        <section className="section">
-          <div className="container">
-            <div className="banner">
-              <div><h3 style={{margin:0, fontSize:27}}>Ready for the implementation phase?</h3><p>Use the starter, replace the mock content, connect the backend and then publish the API through RapidAPI.</p></div>
-              <Link className="btn btn-secondary" href="/docs">Open implementation guide</Link>
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );

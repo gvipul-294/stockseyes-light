@@ -38,7 +38,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .logo { width: 36px; height: 36px; border-radius: 11px; background: var(--ink); color: var(--accent); display: grid; place-items: center; font-size: 17px; }
 .nav-links { display: flex; gap: 22px; color: #50604e; font-size: 14px; }
 .nav-links a:hover { color: var(--ink); }
-.nav-cta { padding: 10px 15px; background: var(--ink); color: #fff; border-radius: 12px; font-size: 14px; font-weight: 700; }
 
 .hero { padding: 92px 0 56px; }
 .hero-grid { display: grid; grid-template-columns: 1.12fr .88fr; gap: 48px; align-items: center; }

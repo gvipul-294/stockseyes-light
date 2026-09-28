@@ -9,7 +9,7 @@ This starter is deliberately structured so the visual website can evolve indepen
 - Colors and spacing: edit CSS variables at the top of `app/globals.css`.
 - Pricing: edit the pricing cards in `app/page.tsx` and `app/pricing/page.tsx`.
 - API examples: edit the code block in `app/page.tsx` and keep it aligned with `rapidapi/openapi.yaml`.
-- Docs: edit `app/docs/page.tsx`.
+- Project guides: edit the Markdown files in `docs/` and `rapidapi/`.
 
 ## When product requirements change
 

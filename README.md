@@ -9,7 +9,7 @@ A Vercel-ready Next.js website starter for the planned Stockseyes market-data AP
 - Architecture section based on the planned ingestion + Redis + historical store model
 - API example section
 - Pricing placeholder
-- Developer documentation page
+- Architecture and pricing pages
 - Vercel-ready Next.js App Router project
 - GitHub Actions CI (lint + production build)
 - `/api/health` smoke-test endpoint
@@ -22,7 +22,9 @@ A Vercel-ready Next.js website starter for the planned Stockseyes market-data AP
 
 Current Next.js documentation requires Node.js 20.9 or newer; Node 22 is recommended for this project.
 
-## Run locally
+## Start building
+
+Get the website running locally, then edit the landing page, API contract or backend as your product requirements evolve.
 
 ```bash
 npm install
@@ -79,7 +81,7 @@ Developers using Stockseyes
 
 Host the real API on a stable HTTPS endpoint. Then add the API in RapidAPI Studio / Provider Dashboard, import `rapidapi/openapi.yaml`, configure the base URL, security, plans and rate limits, test it, and publish the listing.
 
-Read `app/docs/page.tsx` and `rapidapi/README.md` for the fuller process.
+Read `rapidapi/README.md` for RapidAPI publication notes, and see `docs/` for the editing and CI/CD guides.
 
 ## Editing the code
 

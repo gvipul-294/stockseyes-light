@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function ArchitecturePage() {
   return (
     <main className="subpage">
@@ -35,7 +33,6 @@ export default function ArchitecturePage() {
           <li>The API tier remains stateless and horizontally scalable.</li>
           <li>RapidAPI sits at the developer-facing boundary for discovery, subscriptions and plan enforcement.</li>
         </ul>
-        <p><Link className="btn btn-secondary" href="/docs">Read implementation guide</Link></p>
       </div>
     </main>
   );
