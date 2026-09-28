@@ -22,7 +22,9 @@ A Vercel-ready Next.js website starter for the planned Stockseyes market-data AP
 
 Current Next.js documentation requires Node.js 20.9 or newer; Node 22 is recommended for this project.
 
-## Run locally
+## Start building
+
+Get the website running locally, then edit the landing page, API contract or backend as your product requirements evolve.
 
 ```bash
 npm install

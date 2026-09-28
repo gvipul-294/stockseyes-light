@@ -58,10 +58,10 @@ git push -u origin feature/your-change
           <li>Deploy the production API and verify its HTTPS base URL, health checks and authentication behaviour.</li>
           <li>Open RapidAPI Provider/Studio and create an API project.</li>
           <li>Import the OpenAPI specification from <code>rapidapi/openapi.yaml</code> or define the endpoints in the dashboard.</li>
-          <li>Configure the API's <strong>Base URL</strong> to point at your production backend.</li>
+          <li>Configure the API&apos;s <strong>Base URL</strong> to point at your production backend.</li>
           <li>Configure security, endpoint definitions and documentation.</li>
           <li>Configure Basic/Pro/Ultra/other plans, request quotas, rate limits and pricing according to the final commercial model.</li>
-          <li>Use RapidAPI's test console and provider monitoring to validate requests before making the listing public.</li>
+          <li>Use RapidAPI&apos;s test console and provider monitoring to validate requests before making the listing public.</li>
           <li>Publish the listing and direct developers to the RapidAPI listing URL from this website.</li>
         </ol>
 

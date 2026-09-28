@@ -147,7 +147,7 @@ GET /v1/stocks/AAPL/history?start=2026-01-01&end=2026-09-24&interval=1d`}</pre>
             <div className="workflow">
               <div className="step"><div className="step-num">01</div><h3>Build</h3><p>Edit the website, API contract and backend according to the business requirement.</p></div>
               <div className="step"><div className="step-num">02</div><h3>Verify</h3><p>Run lint and production build checks in CI for every branch or pull request.</p></div>
-              <div className="step"><div className="step-num">03</div><h3>Deploy</h3><p>Push the website through Vercel's Git integration for preview and production deployments.</p></div>
+              <div className="step"><div className="step-num">03</div><h3>Deploy</h3><p>Push the website through Vercel&apos;s Git integration for preview and production deployments.</p></div>
               <div className="step"><div className="step-num">04</div><h3>Publish</h3><p>Host the production API separately, import its OpenAPI contract into RapidAPI and configure the listing.</p></div>
             </div>
           </div>
