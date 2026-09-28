@@ -1,0 +1,98 @@
+openapi: 3.0.3
+info:
+  title: Stockseyes Market Data API
+  version: 1.0.0
+  description: >-
+    Planned public API contract for real-time and historical market data.
+    Replace the illustrative implementation with the production backend before publishing.
+servers:
+  - url: https://api.example.com
+    description: Replace with your production API base URL
+paths:
+  /v1/stocks/{symbol}/quote:
+    get:
+      summary: Get the latest quote
+      operationId: getQuote
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema:
+            type: string
+          example: AAPL
+      responses:
+        '200':
+          description: Latest quote
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Quote'
+        '404':
+          description: Unknown symbol
+  /v1/stocks/{symbol}/history:
+    get:
+      summary: Get historical market data
+      operationId: getHistory
+      parameters:
+        - name: symbol
+          in: path
+          required: true
+          schema: { type: string }
+          example: AAPL
+        - name: start
+          in: query
+          required: true
+          schema: { type: string, format: date }
+        - name: end
+          in: query
+          required: true
+          schema: { type: string, format: date }
+        - name: interval
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [1m, 5m, 15m, 1h, 1d]
+            default: 1d
+      responses:
+        '200':
+          description: Historical candles
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  symbol: { type: string }
+                  interval: { type: string }
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Candle'
+components:
+  securitySchemes:
+    rapidApiKey:
+      type: apiKey
+      in: header
+      name: X-RapidAPI-Key
+  schemas:
+    Quote:
+      type: object
+      required: [symbol, exchange, price, timestamp]
+      properties:
+        symbol: { type: string }
+        exchange: { type: string }
+        price: { type: number, format: double }
+        currency: { type: string, example: USD }
+        timestamp: { type: string, format: date-time }
+        data_age_ms: { type: integer, format: int64 }
+    Candle:
+      type: object
+      properties:
+        timestamp: { type: string, format: date-time }
+        open: { type: number, format: double }
+        high: { type: number, format: double }
+        low: { type: number, format: double }
+        close: { type: number, format: double }
+        volume: { type: number, format: double }
+security:
+  - rapidApiKey: []
